@@ -20,8 +20,8 @@ Start off by forking this repository into your own github profile. What you will
 
 ## *Resources*
 
-* IMDB Dataset: `https://www.imdb.com/interfaces/`
-* PostgreSQL Connection String: `<>`
+* IMDB Dataset: https://www.imdb.com/interfaces/
+* PostgreSQL Connection String: `< given by interviewer - replace here >`
 
 
 ## *Walkthrough*
