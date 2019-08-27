@@ -8,14 +8,15 @@ Start off by forking this repository into your own github profile. What you will
 
 ## *Brief*
 
-1) Load the IMDB dataset into a PostgreSQL database.
-2) Create an `express` api with 2 primary routes:
+1) Create an Entity-Relationship (ER) diagram of the IMDB dataset.
+2) Load the IMDB dataset into a PostgreSQL database.
+3) Create an `express` api with 2 primary routes:
    * `/search`
      * Search route which returns an array of titles
      * In the returned array, each element should contain a subset of the complete data for that title (`title.basics`)
    * `/title/<titleId>`
      * Title details route which returns _all_ data around a given title in an organized manner
-3) Optimize for scale! 🚀🚀🚀
+4) Optimize for scale! 🚀🚀🚀
 
 
 ## *Resources*
@@ -26,9 +27,11 @@ Start off by forking this repository into your own github profile. What you will
 
 ## *Walkthrough*
 
-Take some time to explore the IMDB Dataset page and understand how the data is structured. The provided `PostgreSQL` connection string points to an empty database. Your first task is to populate this database with the IMDB dataset while ensuring any foreign key relationships are properly created / maintained.
+Take some time to explore the IMDB Dataset page and understand how the data is structured. Create an Entity-Relationship (ER) diagram, and include a `.jpg` of it in this repository.
 
-You will then create an `express` api in this repository which will expose 2 routes using your newly populated `PostgreSQL` database:
+The provided `PostgreSQL` connection string points to an empty database. Populate this database with the IMDB dataset while ensuring any foreign key relationships are properly created / maintained.
+
+Then create an `express` api in this repository which will expose 2 routes using your newly populated `PostgreSQL` database:
 * `[BASE_URL]/search`
   * Search route which returns an array of titles
   * Must handle following optional search parameters:
@@ -52,18 +55,21 @@ Your first goal should be to put together a simple working implementation of the
 Use the `.eslint` file included in this project to ensure that your code formatting is consistent with our practices. Look for linting plugins that support ESLint for whatever your text editior of choice is.
 
 
-## *Guidance (what we’d like to see)*
+## *Measurables (what we’d like to see)*
 
-* Spend time at the start of the project to plan things out
-* At the conclusion of this project, you should have a locally-runnable and production-ready application
 * Please be ready to explain _anything_ and _everything_ - your decision-making process should make sense to us
 * _Every_ line of code should have a purpose
-* Don't forget to give consideration to things like:
+* Abstract logic into seperate files wherever it makes sense
+* Organize files - repository structure should be easy to follow
+* Don't forget to consider things like:
   * environment / configuration variables
   * request validation
   * error handling
-  *
+  * api spec
   * testing
+* We like seeing you use effecient utility methods such as `map`, `filter`, and `reduce`
+* We like seeing you use modern ES6 syntax
+* At the conclusion of this project, you should have a locally-runnable and production-ready application
 
 
 ## *Bonus points*
