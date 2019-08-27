@@ -74,6 +74,6 @@ Use the `.eslint` file included in this project to ensure that your code formatt
 
 ## *Bonus points*
 
-Can you optimize this project for even more scale by using `Redis`, an simple in-memory caching solution? Show us how you would incorporate such a system and where such logic would go (and don't forget to consider any corner cases).
+Can you optimize this project for even more scale by using `Redis`, a simple in-memory caching solution? Show us how you would incorporate such a system and where such logic would go (and don't forget to consider any corner cases).
 
 While we can't provide you with a live `Redis` database, feel free to use [this](https://www.npmjs.com/package/redis-mock) mocking library instead. We'll pretend it's the real thing :)
