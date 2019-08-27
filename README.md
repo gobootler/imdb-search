@@ -1,4 +1,4 @@
-# IMDB Movie Search
+# 🍿 IMDB Movie Search 🍿
 
 
 ## *Getting Started*
