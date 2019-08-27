@@ -9,13 +9,13 @@ Start off by forking this repository into your own github profile. What you will
 ## *Brief*
 
 1) Create an Entity-Relationship (ER) diagram of the IMDB dataset.
-2) Load the IMDB dataset into a PostgreSQL database.
+2) Load the IMDB dataset into provided PostgreSQL database.
 3) Create an `express` api with 2 primary routes:
    * `/search`
      * Search route which returns an array of titles
-     * In the returned array, each element should contain a subset of the complete data for that title (`title.basics`)
+     * In the returned array, each element should contain a subset of the complete data for that title (see `title.basics`)
    * `/title/<titleId>`
-     * Title details route which returns _all_ data around a given title in an organized manner
+     * Title details route which returns _all_ related data for a given title in an organized manner
 4) Optimize for scale! 🚀🚀🚀
 
 
@@ -27,7 +27,7 @@ Start off by forking this repository into your own github profile. What you will
 
 ## *Walkthrough*
 
-Take some time to explore the IMDB Dataset page and understand how the data is structured. Create an Entity-Relationship (ER) diagram, and include a `.jpg` of it in this repository.
+Take some time to explore the IMDB dataset page and understand how the data is structured. Create an Entity-Relationship (ER) diagram, and include a `.jpg` of it in this repository.
 
 The provided `PostgreSQL` connection string points to an empty database. Populate this database with the IMDB dataset while ensuring any foreign key relationships are properly created / maintained.
 
