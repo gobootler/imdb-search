@@ -26,10 +26,9 @@ Start off by forking this repository into your own github profile. What you will
 
 ## *Walkthrough*
 
-Take some time to explore the IMDB Dataset page and understand how the data is structured. The `PostgreSQL` connection string provided points to an empty database. Your first task is to populate this database with the IMDB dataset while ensuring any foreign key relationships are properly created / maintained.
+Take some time to explore the IMDB Dataset page and understand how the data is structured. The provided `PostgreSQL` connection string points to an empty database. Your first task is to populate this database with the IMDB dataset while ensuring any foreign key relationships are properly created / maintained.
 
-You will then create an `express` api in this repository which, using your new loaded `PostgreSQL` database, will expose 2 routes:
-
+You will then create an `express` api in this repository which will expose 2 routes using your newly populated `PostgreSQL` database:
 * `[BASE_URL]/search`
   * Search route which returns an array of titles
   * Must handle following optional search parameters:
