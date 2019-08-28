@@ -6,7 +6,7 @@
 Start off by forking this repository into your own github profile. What you will specifically build out is detailed below. Please commit often as you complete tasks.
 
 
-## *Brief*
+## *Overview*
 
 1) Create an Entity-Relationship (ER) diagram of the IMDB dataset.
 2) Load the IMDB dataset into provided PostgreSQL database.
@@ -31,10 +31,10 @@ Take some time to explore the IMDB dataset page and understand how the data is s
 
 The provided `PostgreSQL` connection string points to an empty database. Populate this database with the IMDB dataset while ensuring any foreign key relationships are properly created / maintained.
 
-Then create an `express` api in this repository which will expose 2 routes using your newly populated `PostgreSQL` database:
+Then create an api (we prefer `node`/`express`) in this repository which will expose 2 routes using your newly populated `PostgreSQL` database:
 * `[BASE_URL]/search`
   * Search route which returns an array of titles
-  * Must handle following optional search parameters:
+  * Must handle following optional query parameters:
     * `keyword`: to fuzzy search for specific title names
     * `titleType`
     * `isAdult`
@@ -50,15 +50,17 @@ Then create an `express` api in this repository which will expose 2 routes using
 * `[BASE_URL]/title/<titleId>`
   * Title details route which returns *__all__* data around a given title in an organized manner
 
-Your first goal should be to put together a simple working implementation of these 2 routes. Then we would like for you to optimize the setup for production. Don't forget to consider scale related issues; for example: should certain filtering logic reside in the api or in the database query itself?
+Your first goal should be to put together a simple working implementation of these 2 routes. Then we would like for you to optimize the setup for production.
+
+**Don't forget to consider scale related issues.** For example: should certain filtering logic reside in the api or in the database query itself?
 
 Use the `.eslint` file included in this project to ensure that your code formatting is consistent with our practices. Look for linting plugins that support ESLint for whatever your text editior of choice is.
 
 
 ## *Measurables (what we’d like to see)*
 
-* Please be ready to explain _anything_ and _everything_ - your decision-making process should make sense to us
-* _Every_ line of code should have a purpose
+* Please be ready to explain anything and everything - your decision-making process should make sense to us
+* Every line of code should have a purpose
 * Abstract logic into seperate files wherever it makes sense
 * Organize files - repository structure should be easy to follow
 * Don't forget to consider things like:
